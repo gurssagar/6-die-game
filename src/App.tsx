@@ -8,6 +8,7 @@ function App() {
   const [isWinner, setIsWinner] = useState(false);
   const [rollCount, setRollCount] = useState(0);
   const [bestScore, setBestScore] = useState(Infinity);
+  const [tempDiceValues, setTempDiceValues] = useState<number[]>([]);
 
   useEffect(() => {
     const savedBestScore = localStorage.getItem('bestScore');
